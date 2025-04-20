@@ -1,0 +1,145 @@
+
+#all-products 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 2%;
+}
+
+#all-products img
+{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 20px;
+}
+
+#all-products .card
+{
+    margin: 2%;
+}
+
+.card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid purple;
+    width: 250px !important;
+    height: 300px !important;
+    
+}
+
+.card:hover
+{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    border: 2px solid purple;
+}
+
+h4
+{
+    /* text-align: center;
+    margin-top: 50px;
+    color: blue;
+    font-weight: bold; */
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px; 
+    color: #fff;
+    text-shadow: 0 0 5px rgb(108, 27, 97), 0 0 10px rgb(80, 11, 89), 0 0 10px rgb(27, 86, 108), 0 0 0 rgb(13, 30, 30);
+    animation: glow 1s infinite alternate;
+}
+
+.carousel-item.active
+{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+.carousel-item
+{
+    display: none;
+}
+
+.carousel-img 
+{
+    /* max-width: 30%;
+    max-height: 30%; */
+    width: 80px;
+    height: 80px;
+    /* height: auto; */
+
+    object-fit: cover;
+}
+
+#carousel-img
+{
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: 200px;
+    width: 100%;    
+    height: auto;
+    object-fit: cover;
+}
+
+.carousel-caption 
+{
+    bottom: 10px;
+    right: 30px;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 5px;
+}
+.carousel-card 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    overflow: hidden;
+}
+
+#carousel-products
+{
+    min-height: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.toast.fixed-toast 
+{
+    position: fixed;
+    bottom: 0;  
+    right: 0;   
+    z-index: 1050; 
+}
+
+h6
+{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 40px; 
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 0 0 5px rgb(108, 27, 97), 0 0 10px rgb(80, 11, 89), 0 0 10px rgb(27, 86, 108), 0 0 0 rgb(13, 30, 30);
+    animation: glow 1s infinite alternate;
+}
+.btn.btn-outline-secondary
+{
+    color: blueviolet;
+}
+
+.btn.btn-outline-secondary:hover
+{
+    background-color: rgb(204, 170, 236);
+}

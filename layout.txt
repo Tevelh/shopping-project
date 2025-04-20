@@ -1,0 +1,107 @@
+Guest:
+-------------------------------
+No account dashboard available
+
+1. Register option link
+2. Log-In option link
+
+User:
+-------------------------------
+1. Cart page where we can find all the products the user wants to buy
+    1.1 cart page will pressent some info about the produc: name price and pic
+    1.2 AT THE bottom of the cart page please set a button called "Buy All" , THIS BUTTON WILL REDIRECT US TO THE payment page
+    1.3 At the bottom of the cart page next to the button display the total price of all the cart`s products.
+2. wish list - products we dont wanna buy right now, save for later
+3. payemnt page 
+    3.1 payment page will have the total amount of the products + shiping + discount
+    3.2 after pressing the "Pay now" button , an animation is been displayed 
+    3.3 the avialble amount of the products is been reduced
+        3.3.1 if product is been reduced to 0 then the product is unavialble for buying.
+        3.3.2 do not allow any "proceed to pay" or "buy now" option.
+    3.4 after a payment is successfully received , set the cart to 0 
+    3.5 after the payment please redirect the user to a "Thankyou" page , display A
+        thank you message, and maybe set some animations
+
+Seller:
+-------------------------------
+1. Add new product
+    1.1 new prod structure:
+        newProd = {
+            this.product_id = product_id;
+            this.product_name = product_name;
+            this.product_price = product_price;
+            this.product_description = product_description;
+            this.product_category = product_category;
+            this.available_quantity = available_quantity;
+            this.comment = comment;
+            this.product_image = product_image;
+            this.seller_id = seller_id;
+        }
+    1.2 all fileds are required before initalization
+    1.3 create new product based on 2 pic options:
+        1.3.1 external url
+        1.3.2 local picture (please concidere the capacity of the local storage (usually 5mb))
+
+2. Cart page where we can find all the products the user wants to buy
+    2.1 cart page will pressent some info about the produc: name price and pic
+    2.2 AT THE bottom of the cart page please set a button called "Buy All" , THIS BUTTON WILL REDIRECT US TO THE payment page
+    2.3 At the bottom of the cart page next to the button display the total price of all the cart`s products.
+
+3. wish list - products we dont wanna buy right now, save for later (optional)
+4. payment page 
+    4.1 payment page will have the total amount of the products + shiping + discount
+    4.2 after pressing the "Pay now" button , an animation is been displayed 
+    4.3 the avialble amount of the products is been reduced
+        4.3.1 if product is been reduced to 0 then the product is unavialble for buying.
+        4.3.2 do not allow any "proceed to pay" or "buy now" option.
+    4.4 after a payment is successfully received , set the cart to 0 
+    4.5 after the payment please redirect the user to a "Thankyou" page , display A
+        thank you message, and maybe set some animations
+        
+5. My Products Page - a page that deticated for seller`s products.
+    5.1 Only avialble for seller configuration.
+    5.2 A seller is able to edit the product details in a modal.
+        5.2.1 view this structure:
+            {
+                product_name
+                product_price
+                available_quantity
+                product_description
+                comment
+            }
+        only this are allowed  to be changed.
+    5.3 set 2 buttons:
+        5.3.1 A Save button to save any changes to the local storage.
+        5.3.2 A Close button to close the modal
+6. ad products moving bar
+    6.1 set a moving bar to display products 
+        6.1.1 use both carousale and card compknent to do that
+7. best sales add moving bar 
+    7.1 set a moving bar to display products 
+        7.1.1 use both carousale and card compknent to do that
+        7.1.2 select the top 3 sales from all the products        
+
+General:
+-------------------------------
+All configs options can see the products
+A product is displayed as minimum :
+    name , img , desctription and a button that redirect us to a "Product" PAGE with the product Id
+    in the url (master details)
+Only logged in users can move to the buy part of the product
+If not logged in , redirect to the login page
+a new order is based on this structure:
+        { 
+        this.orderId = orderId;
+        this.productId = productId;
+        this.buyerId = buyerId;
+        }
+
+
+
+
+
+delete icon-
+ <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                        </svg>        

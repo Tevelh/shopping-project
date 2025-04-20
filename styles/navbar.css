@@ -1,0 +1,51 @@
+
+
+#profilePic
+{
+    border-radius: 40px;
+    width: 50px;
+    height: 50px;
+    margin-top: 2px;
+}
+
+#navbar
+{
+    background-color: rgb(218, 196, 238);
+    height: 60px;
+    color: purple !important;
+}
+
+#navbar a
+{
+    color: purple !important;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navbar a:hover
+{
+    color: rgb(209, 0, 188) !important;
+}
+
+#dropdown-menu
+{
+    right: 0;
+    left: auto;
+    margin-top: 0;
+    top: 80px;
+}
+
+.dropdown:hover .dropdown-menu 
+{
+    display: block;
+    margin-top: 0;
+}
+
+.dropdown-toggle::after 
+{
+    display: none;
+}
+
+.nav-link.active {
+    color: rgb(143, 10, 10) !important;
+}

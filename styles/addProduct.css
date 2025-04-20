@@ -1,0 +1,38 @@
+#addBtn
+{
+    background-color: rgb(224, 204, 243);
+}
+
+#addBtn:hover
+{
+    background-color: rgb(184, 164, 213);
+}
+
+#loginBtn
+{
+    margin: 10px;
+}
+
+.center
+{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+    
+}
+
+label
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+input[type="text"]
+{
+    border: 1px solid rgb(212, 211, 211) !important;
+}
+

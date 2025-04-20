@@ -1,0 +1,19 @@
+
+[
+    {
+        "couponCode" : "COUPON50",
+        "discount" : 50
+    },
+    {
+        "couponCode" : "COUPON60",
+        "discount" : 60
+    },
+    {
+        "couponCode" : "COUPON40",
+        "discount" : 40
+    },
+    {
+        "couponCode" : "COUPON20",
+        "discount" : 20
+    }
+]

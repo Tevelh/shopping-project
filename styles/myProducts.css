@@ -1,0 +1,73 @@
+#myProductsContent
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 2%;
+}
+
+#myProductsContent img
+{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 20px;
+}
+
+#myProductsContent .card
+{
+    margin: 2%;
+}
+
+
+.card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid purple;
+    width: 250px !important;
+    height: 430px !important;
+    
+}
+
+#modal, #modal-content
+{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid purple;
+    
+
+}
+
+#modal input
+{
+    margin: 2%;
+    border: 1px solid purple;
+    width: fit-content;
+    padding: 5px;
+    justify-content: center;
+  
+}
+
+#waitingSpinner
+{
+    display: none;
+    width: 30px;
+    height: 30px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid purple;
+    border-radius: 50%;
+    animation: spinner 4s linear infinite;
+}
+
+@keyframes spinner
+{
+    0% { }
+    100% { transform: rotate(360deg); }
+}
