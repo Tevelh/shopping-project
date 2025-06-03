@@ -1,4 +1,5 @@
-<b>Home Page with all products display. on the top- carousel of all products</b><br>
+<b>Home Page with all products display. on the top- carousel of all products</b>
+
 <img width="941" alt="image" src="https://github.com/user-attachments/assets/1c02b88a-333f-480f-9a31-459f91abb1de" />
 
 
